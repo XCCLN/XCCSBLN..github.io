@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./resume_style.css">
+    <script src="./resume.js"></script>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+    <div  id="title">
+        <h1>My Resume Page</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <nav class="col-sm-3 col-4" id="myScrollspy">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#section1">基本訊息</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section2">工作經歷</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section3">專長技能</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">作品集</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#section41">Link 1</a>
+                            <a class="dropdown-item" href="#section42">Link 2</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="col-sm-9 col-8">
+                <article id="section1">
+                    <h3>基本資料</h3>
+                    <table>
+                        <tr>
+                            <th>姓名</th>
+                            <td>
+                                張力仁
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>連絡電話</th>
+                            <td>0978080031</td>
+                        </tr>
+                        <tr>
+                            <th>email</th>
+                            <td>xavierconstantinleonardo@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>通訊地址</th>
+                            <td>新北市板橋區民治街79號</td>
+                        </tr>
+                        <tr>
+                            <th>學歷</th>
+                            <td>明志科大電子工程</td>
+                        </tr>
+                    </table>
+                </article>
+                <br>
+                <br>
+                <article id="section2">
+                    <h3>工作經歷</h3>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>公司名稱</th>
+                                <th>工作職稱</th>
+                                <th>工作期間</th>
+                                <th>工作內容</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>正中資訊</td>
+                                <td>產品工程師</td>
+                                <td>一年半</td>
+                                <td>產品維護安裝設定</td>
+                            </tr>
+                            <tr>
+                                <td>仁大資訊</td>
+                                <td>MIS工程師</td>
+                                <td>一年半</td>
+                                <td>前端系統架設</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>聯為有線電視</td>
+                                <td>助理工程師</td>
+                                <td>兩年</td>
+                                <td>機房維護機台架設</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>羽源電機工作社</td>
+                                <td>學徒</td>
+                                <td>半年</td>
+                                <td>大型機台組裝</td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+                <br>
+                <br>
+                <article id="section3">
+                    <h3>專長技能</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">電腦硬體裝修乙級</li>
+                        <li class="list-group-item">工業電子丙級</li>
+                        <li class="list-group-item">數位電子乙級</li>
+                        <li class="list-group-item">pcp嵌入式晶片(Arduino BOE-BOT)</li>
+                        <li class="list-group-item">microsoft ppt 認證</li>
+                        
+                    </ul>
+                </article>
+                <br>
+                <br>
+                <article id="section41">
+                    <h3>作品集</h3>
+                    <video controls>
+                        <source src="">
+                    </video>
+                </article>
+                <br>
+                <br>
+                <article id="section42">
+                    <h3>自傳</h3>
+                    <!-- Button to Open the Modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        翻閱自傳
+                    </button>
+
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">                            
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h1 class="modal-title">自傳</h1>
+                                    <button type="button" class="close" data-dismiss="modal">×</button>
+                                </div>
+                                
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <h3>Some text to enable scrolling..</h3>
+                                    <p>我叫張力仁，一位擁有豐富工作經驗的產品和MIS工程師。以下是我的經歷：
+
+                                        我從事產品工程師的職業已有一年半的時間，最近的一份工作是在正中資訊擔任產品工程師。在這個職位上，我負責維護、安裝和設定產品，並確保其正常運作。這個經驗讓我學會了如何處理技術問題和提供卓越的客戶服務。
+                                        
+                                        在之前的工作中，我曾在仁大資訊擔任MIS工程師，負責前端系統的架設。這個職位讓我熟悉了前端架設和系統架構，並提升了我的技術能力。幾年後，我在聯為有線電視擔任助理工程師，負責機房維護和機台架設工作。這段經驗讓我熟悉了大型機房的運作和維護，並學到了團隊合作和問題解決的重要性。
+                                        
+                                        在早期的職業生涯中，我曾在羽源電機工作社擔任學徒，專注於大型機台的組裝工作。這段時間，我學到了許多關於機械電機整合結構和組裝過程的知識，並培養了我的細心和耐心。
+                                        
+                                        此外，我持有硬體電腦裝修的丙級和乙級證照，以及工業電子的丙級和數位電子的乙級證照。這些證照體現了我對技術的專業知識和努力學習的態度。此外，我還擁有Microsoft ppt認證，這增強了我在商業簡報和溝通方面的能力。
+                                        
+                                        通過這些工作和學習經歷，我積累了豐富的技術知識和實踐經驗。我深信技術的力量和創新的推動，並致力於不斷學習和成長。我的目標是在技術領域中持續成長並擔任更具挑戰性的角色。
+
+                                        除了我的專業技能，我也具備良好的溝通能力和團隊合作精神。在我之前的工作中，我常常需要與不同部門的同事合作，共同解決問題並達成目標。我善於傾聽他人的觀點，並能夠提出建設性的意見和解決方案。我相信有效的溝通和良好的團隊合作是實現卓越成果的關鍵。
+                                        
+                                        此外，我擁有積極進取的態度和強烈的學習動力。我總是保持對新技術和行業趨勢的關注，並努力將其應用於我的工作中。我喜歡面對挑戰並持續學習，以提高自己的專業水平和能力。
+                                        
+                                        我相信這些經驗和特質使我成為一個適合不斷發展和創新的環境的人選。我渴望在您的組織中發揮我的技術專長，同時不斷學習和成長。
+                                        
+                                        謝謝您花時間閱讀我的自傳。如果有機會加入您的團隊，我將全力以赴，為您的組織帶來價值。順祝商祺，
+
+                                        張力仁</p>
+                                    <p> Dear Sir/Madam,
+
+                                        I am writing to express my strong interest in the position of [Position] in your organization. With [Number of Years] years of experience in the technology industry, I am confident that I possess the necessary skills and qualities to excel in this role and contribute to the growth of your organization.
+                                        
+                                        I have gained extensive experience in various technical roles, including [Job Title] at [Company], where I was responsible for [Responsibilities], [Job Title] at [Company], where I focused on [Responsibilities], and [Job Title] at [Company], where I assisted in [Responsibilities]. I also served as an apprentice at [Company] for six months, where I gained hands-on experience in assembling large machines.
+                                        
+                                        In addition to my technical skills, I possess excellent communication skills and a strong team spirit. In my previous roles, I worked collaboratively with colleagues from different departments to solve problems and achieve goals. I am adept at listening to others' perspectives and offering constructive feedback and solutions. I believe that effective communication and teamwork are key to achieving excellent results.
+                                        
+                                        Moreover, I have a proactive attitude and a strong motivation to learn. I always keep myself updated on new technologies and industry trends and strive to apply them to my work. I enjoy challenges and continuous learning to improve my professional skills and abilities.
+                                        
+                                        I believe that these experiences and traits make me an ideal candidate for a role in a dynamic and innovative environment. I am eager to contribute my technical expertise to your organization while continuously learning and growing.
+                                        
+                                        Thank you for considering my application. I look forward to the opportunity to discuss my qualifications further.
+                                        
+                                        Sincerely</p>
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <br>
+            <br>
+        </div>
+    </div>
+    
+</body>
+</html>
